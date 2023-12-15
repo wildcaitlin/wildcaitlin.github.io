@@ -12,9 +12,26 @@
         <div id="image" style="background-image: url('images/test\ image.jpg');"><h1>header</h1></div>
         <div id="content">
 
-            test
-            <div style="color: var(--teal);">test colourtest colourtest colourtest colourtest colourtest colourtest colourtest colourtest colourtest colourtest colourtest colourtest colourtest colourtest colourtest colourtest colourtest colourtest colour</div >
-            <div style="color: var(--magenta);">test magenta</div >
+            <div id="flex">
+                
+                <div><h2>Register here or something</h2><b style="color: var(--magenta)">Few steps:</b><br>
+                1. select day<br> 2. select time<br> 3. fill info<br> 4. submit<br> 5. receive email</div>
+
+                <form action="booking.php" method="post" class="shape">
+                    <label for="name">Name: </label><input type="text" id="name" name="name">
+                    <hr>
+                    <!--Some sort of drop down menu importing options from database-->
+                        <input type="date" id="date" name="date">
+                        <input type="time" id="time" name="time">
+                    <hr>
+                    <label for="email">Email: </label><input type="text" id="email" name="email"><hr>
+                        <label><input type="checkbox" name="check"> checkbox</label>
+                        
+                        <hr>
+                        <button>Submit</button>
+                </form>
+            </div>
+            
 
         </div>
     </body>
